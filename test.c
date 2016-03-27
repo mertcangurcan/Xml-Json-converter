@@ -6,7 +6,7 @@
 
 int takeExtension(char *file)
 {
-char *extention = malloc(5);	
+char *extention = malloc(10);	
 int i = 0;
 int j=0;
 while(file[i]!='.')
@@ -25,11 +25,13 @@ while(file[i]!='.')
 }
 	while(file[i] !='\0')
 		{
-			printf("%s",file[i]);
+			//printf("%c",file[i]);
 			extention[j]=file[i];
+			//printf("%c",extention[i]);
 			i++;
+			j++;
 		}
-		printf("%s", extention);
+		printf("%s\n", extention);
 	 return 0;
 }
 
